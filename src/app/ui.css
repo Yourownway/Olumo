@@ -1,0 +1,99 @@
+.ui-button {
+    font-family: Open-sans;
+    border: solid var(--blue-bg) 0.5px;
+    padding: 10px 20px;
+  
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.ui-button-blue {
+    font-family: Open-sans;
+    font-size: 19px;
+    color: var(--white-bg);
+    border: solid var(--blue-bg) 0.5px;
+    background-color: var(--blue-bg);
+    padding: 10px 20px;
+    width: 165px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.ui-button-light {
+background-color: var(--white-bg);
+width: 175px;
+}
+.ui-button:hover { 
+    color: var(--blue-bg);
+    background-color: var(--white-bg);
+
+}
+.ui-sector--list{
+ 
+}
+
+.ui-sector {
+    background-color: var(--white-bg);
+    border: var(--blue-bg) solid;
+    border-radius: 180px;
+    position: relative;
+    cursor: pointer;
+    max-width: 150px;
+    padding: 14px 20px;
+
+}
+
+.ui-sector::after {
+    content: "";
+    /*     top: 0;
+    left: 50%; */
+    top: 50%;
+    left: 50%;
+    border-radius: 80px;
+    border: var(--blue-bg) solid;
+    /* transform: translateX(-50%); */
+    position: absolute;
+    background-color: var(--blue-bg);
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    transition: linear 0.3s;
+
+}
+
+.ui-sector:hover::after {
+
+    transform: translateX(-50%) translateY(-50%) scale(14.5);
+}
+
+.ui-sector span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+
+    height: 50px;
+
+    z-index: 100;
+
+}
+
+.ui-sector img {
+    position: relative;
+    height: 60px;
+    z-index: 100;
+
+}
+
+.ui-cabine--card {
+    box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.6);
+    border-radius: 53px;
+    margin-right: 90px !important;
+    width: 300px;
+    padding: 40px 10px 5px 0;
+    height: 455px;
+}
